@@ -11,12 +11,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: cd
+        run: cd my-bulletin-board-app
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - name: cd
-        run: cd my-bulletin-board-app
+      
 
       - name: Install Dependencies
         run: |
