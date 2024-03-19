@@ -18,8 +18,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm install --legacy-peer-deps
-          npm install selenium-webdriver chromedriver mocha chai --legacy-peer-deps
+          npm install -f
+          npm install selenium-webdriver chromedriver mocha chai -f
 
       - name: Build React App
         run: npm run build
