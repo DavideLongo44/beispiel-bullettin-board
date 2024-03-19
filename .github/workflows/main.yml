@@ -16,10 +16,13 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Navigate to App Directory
+        run: cd my-bulletin-board-app
+
       - name: Install Dependencies
         run: |
-          npm install -f
-          npm install selenium-webdriver chromedriver mocha chai -f
+          npm install
+          npm install selenium-webdriver chromedriver mocha chai
 
       - name: Build React App
         run: npm run build
