@@ -15,6 +15,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+      - name: cd
+        run: cd beispiel-bullettin-board
 
       - name: Install Dependencies
         run: |
