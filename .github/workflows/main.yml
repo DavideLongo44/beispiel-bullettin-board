@@ -21,9 +21,8 @@ jobs:
       
 
       - name: Install Dependencies
-        run: |
-          npm install
-          npm install selenium-webdriver chromedriver mocha chai
+        run: npm install selenium-webdriver chromedriver mocha chai
+          
 
       - name: Build React App
         run: npm run build
