@@ -11,16 +11,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Navigate to Project Directory
+      - name: cd
         run: cd my-bulletin-board-app
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+      
 
       - name: Install Dependencies
         run: npm install selenium-webdriver chromedriver mocha chai
+      - name: cd
+        run: cd my-bulletin-board-app    
 
       - name: Build React App
         run: npm run build

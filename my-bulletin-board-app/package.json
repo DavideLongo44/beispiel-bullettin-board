@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "npx mocha --no-timeouts 'src/test.js'",
     "eject": "react-scripts eject",
-    "start:prod": "node app.js"
+    "start:prod": "node App.js"
   },
   "eslintConfig": {
     "extends": [
