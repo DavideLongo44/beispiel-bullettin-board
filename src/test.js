@@ -17,7 +17,10 @@ describe("add note", function () {
         //Chai asserts if new note's text matches the input
 
         //open Chrome browser
-        let driver = await new Builder().forBrowser("chrome").build();
+        const chromeCapabilities = Capabilities.chrome();
+        chromeCapabilities.set('goog:chromeOptions', {args: ['--headless'] });
+
+        const driver = new Builder().withCapabilities(chromeCapabilities).build();
 
         try {
             //open the website
