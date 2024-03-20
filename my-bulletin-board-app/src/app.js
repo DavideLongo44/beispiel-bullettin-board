@@ -63,7 +63,7 @@ function App() {
           }}
         >
           <div style={{ backgroundColor: note.color }} className="box">
-            {note.item}
+            <div className="note-name">{note.item}</div>
             <button id="delete" onClick={() => deleteNote(note.id)}>
               X
             </button>

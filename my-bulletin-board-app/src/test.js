@@ -25,12 +25,12 @@ describe("add note", function () {
 
             //find the search box and enter a note
             await driver
-                .findElement(By.xpath('//*[@id="new-item"]/input'))
+                .findElement(By.xpath('//input'))
                 .sendKeys("Hello Selenium", Key.RETURN);
 
             //get the note's text
             let note = await driver
-                .findElement(By.xpath('//*[@id="items"]/div/p'))
+                .findElement(By.xpath('//div[@class="note-name"]'))
                 .getText();
 
             //assert that the note's text is the same as the input text "Hello Selenium"    
